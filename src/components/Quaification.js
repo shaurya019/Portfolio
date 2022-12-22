@@ -2,27 +2,27 @@ import React,{useEffect} from "react";
 import { UilCalendarAlt,UilGraduationCap,UilBriefcaseAlt } from '@iconscout/react-unicons'
 
 export const Quaification = () => {
-    // useEffect(()=>{
-    //     const tabs = document.querySelectorALL('[data-target]'),
-    //     tabContents = document.querySelectorALL('[data-Content]');
+    useEffect(()=>{
+        const tabs = document.querySelectorAll('[data-target]'),
+        tabContents = document.querySelectorAll('[data-Content]');
 
-    //     tabs.forEach(tab => {
-    //         tab.addEventlistener('click' , ()=>{
-    //             const target =  document.querySelector(tab.dataset.target) 
+        tabs.forEach(tab => {
+            tab.addEventListener('click' , ()=>{
+                const target =  document.querySelector(tab.dataset.target) 
             
-    //         tabContents.forEach(tabContent => {
-    //             tabContent.classList.remove('quaification_active');
-    //         })
+            tabContents.forEach(tabContent => {
+                tabContent.classList.remove('quaification_active');
+            })
 
-    //         target.classList.add('quaification_active');
+            target.classList.add('quaification_active');
 
-    //         tabs.forEach(tab => {
-    //             tab.classList.remove('quaification_active');
-    //         })
-    //         tab.classList.add('quaification_active');
-    //     })
-    //     })
-    // },[]);
+            tabs.forEach(tab => {
+                tab.classList.remove('quaification_active');
+            })
+            tab.classList.add('quaification_active');
+        })
+        })
+    },[]);
   return (
     <section className="quaification section">
       <h2 className="section_title">Quaification</h2>
