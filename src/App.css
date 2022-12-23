@@ -415,64 +415,19 @@ display: none;
   }
 /************ Skills Css ************/
 
-/************ Project Css ************/
-.Project-section{
-display: flex;
-flex-direction: column;
-align-items: center;
+/************ Projects Css ************/
+.project {
+  padding: 80px 0;
+  position: relative;
+  background-color: black;
+}
+.project h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
 }
 
-.ps-1{
-display: flex;
-flex-direction: row;
-}
-.ps-2{
-  display: flex;
-  flex-direction: row;
-}
-.ps-1 a{
-  text-decoration: none;
-}
-.ps-2 a{
-  text-decoration: none;
-}
-.box{
-  
-  border-radius: 10px;
-  border: 2px solid;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 25px;
-  height: 400px;
-  width:400px;
-}
-.box h3{
-  color: #ffff;
-  font-size: 50px;
-  font-weight: bolder;
-}
-#box-1{
-  background-color: #3F0071;
-}
-#box-2{
-  background-color: #FB2576
-  ;
-}
-#box-3{
-  background-color: #DA0037;
-}
-#box-4{
-  background-color: #334756;
-}
-#box-5{
-  background-color: #395B64;
-}
-#box-6{
-  background-color: #C84B31;
-}
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
@@ -587,72 +542,13 @@ flex-direction: row;
 }
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 20px 30px;
   background-image: url('./assests/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.newsletter-bx {
-  background: #FFFFFF;
-  border-radius: 55px;
-  color: #121212;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-}
-.newsletter-bx h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-}
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
-}
-.new-email-bx::after {
-  content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.new-email-bx input {
-  width: 100%;
-  color: #121212;
-  font-weight: 500;
-  background: transparent;
-  border: 0;
-  padding: 0 15px;
-}
-.new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 20px 65px;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 18px;
-}
+
 .footer img {
   width: 26%;
 }
@@ -662,4 +558,23 @@ flex-direction: row;
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.footer-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon-s{
+    display: flex;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 1;
+}
+
+.footer-icons{
+  display: flex;
+  flex-direction: row;
 }

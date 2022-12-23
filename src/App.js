@@ -6,6 +6,7 @@ import { Skill } from "./components/Skill";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import {Quaification} from "./components/Quaification";
+import {Footer} from "./components/Footer";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Projects />
       <Quaification />
       <Contact />
-
+      <Footer />
     </div>
   );
 }

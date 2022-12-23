@@ -24,7 +24,7 @@ export const Quaification = () => {
         })
     },[]);
   return (
-    <section className="quaification section">
+    <section className="quaification section" id="quaification">
       <h2 className="section_title">Quaification</h2>
       <div className="quaification_container container">
         <div className="quaification_tabs">
